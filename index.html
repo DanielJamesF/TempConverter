@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <title>Temperature Converter</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="input-group input-group-lg">
+          <label class="sr-only" for="farInput">Enter degrees in Farenheit</label>
+          <input id="farInput" type="number" class="form-control" placeholder="Enter number">
+          <div class="input-group-addon starter"> &deg;F</div>
+          <div class="input-group-addon result-a"><span id="farToCel"></span> &deg;C</div>
+          <div class="input-group-addon result-b"><span id="farToKel"></span> &deg;K</div>
+        </div>
+
+        <div class="input-group input-group-lg">
+          <label class="sr-only" for="celInput">Enter degrees in Celsius</label>
+          <input id="celInput" type="number" class="form-control" placeholder="Enter number">
+          <div class="input-group-addon starter">&deg;C</div>
+          <div class="input-group-addon result-a"><span id="celToFar"></span> &deg;F</div>
+          <div class="input-group-addon result-b"><span id="celToKel"></span> &deg;K</div>
+        </div>
+
+        <div class="input-group input-group-lg">
+          <label class="sr-only" for="kelInput">Enter degrees in Kelvin</label>
+          <input id="kelInput" type="number" class="form-control" placeholder="Enter number">
+          <div class="input-group-addon starter">&deg;K</div>
+          <div class="input-group-addon result-a"><span id="kelToFar"></span> &deg;F</div>
+          <div class="input-group-addon result-b"><span id="kelToCel"></span> &deg;C</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./Script/code.js"></script>
+</body>
+
+</html>
