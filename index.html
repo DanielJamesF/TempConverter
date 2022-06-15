@@ -11,36 +11,37 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container container-fluid d-flex flex-column justify-content-center">
     <div class="row">
       <div class="col-md-12">
         <div class="input-group input-group-lg">
-          <label class="sr-only" for="farInput">Enter degrees in Farenheit</label>
-          <input id="farInput" type="number" class="form-control" placeholder="Enter number">
-          <div class="input-group-addon starter"> &deg;F</div>
-          <div class="input-group-addon result-a"><span id="farToCel"></span> &deg;C</div>
-          <div class="input-group-addon result-b"><span id="farToKel"></span> &deg;K</div>
-        </div>
-
-        <div class="input-group input-group-lg">
-          <label class="sr-only" for="celInput">Enter degrees in Celsius</label>
-          <input id="celInput" type="number" class="form-control" placeholder="Enter number">
-          <div class="input-group-addon starter">&deg;C</div>
-          <div class="input-group-addon result-a"><span id="celToFar"></span> &deg;F</div>
-          <div class="input-group-addon result-b"><span id="celToKel"></span> &deg;K</div>
-        </div>
-
-        <div class="input-group input-group-lg">
-          <label class="sr-only" for="kelInput">Enter degrees in Kelvin</label>
-          <input id="kelInput" type="number" class="form-control" placeholder="Enter number">
-          <div class="input-group-addon starter">&deg;K</div>
-          <div class="input-group-addon result-a"><span id="kelToFar"></span> &deg;F</div>
-          <div class="input-group-addon result-b"><span id="kelToCel"></span> &deg;C</div>
+          <div class="row">
+            <label class="sr-only" for="celInput">Input degree in Celsius</label>
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <input id="celInput" type="number" class="form-control" placeholder="Enter number">
+            </div>
+            <div class="col-4">
+              <div class="input-group-addon starter">°C</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="input-group-addon result-a"><span id="celToFar"></span> °F</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="input-group-addon result-b"><span id="celToKel"></span> °K</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   <script src="./Script/code.js"></script>
 </body>
 
